@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Status Saver</string>
+
+    <!-- Navigation -->
+    <string name="nav_statuses">Statuses</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_settings">Settings</string>
+    <string name="settings_coming_soon">Theme, language, and backup options are coming soon.</string>
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_system">Use system theme</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_language_title">Language</string>
+    <string name="settings_language_system">Use system language</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_hindi">Hindi</string>
+    <string name="settings_language_urdu_pakistan">Urdu (Pakistan)</string>
+    <string name="settings_data_title">Data &amp; privacy</string>
+    <string name="settings_data_app_title">Status Saver data</string>
+    <string name="settings_data_app_body">Stored on this device: selected WhatsApp .Statuses folder, saved media records, theme, language, and background auto-save preference.</string>
+    <string name="settings_data_sdk_title">Optional network sharing</string>
+    <string name="settings_data_sdk_body">With your permission, the MAFIX LTD support SDK can use a small part of this device\'s unused network connection and IP address to download public web data in the background. It may process device and network identifiers, connection state, diagnostics, and service usage. Your WhatsApp status photos, videos, and personal files are not shared.</string>
+    <string name="settings_data_review">Review data use</string>
+    <string name="settings_auto_save_title">Background auto-save</string>
+    <string name="settings_auto_save_body">When enabled, Status Saver periodically saves new statuses in the background after you grant folder access. You can turn this off anytime.</string>
+    <string name="settings_dunta_title">Optional network sharing</string>
+    <string name="settings_dunta_switch_title">Share unused network connection</string>
+    <string name="settings_dunta_switch_body">Optional. Allows the MAFIX LTD support SDK to use a small part of this device\'s network connection and IP address to download public web data in the background. You can turn this off anytime.</string>
+    <string name="settings_dunta_privacy">Privacy policy</string>
+    <string name="not_now">Not now</string>
+    <string name="dunta_dialog_title">Optional Network Sharing</string>
+    <string name="dunta_notification_title">Network sharing active</string>
+    <string name="dunta_notification_content">Support mode is active. You can turn it off in Settings.</string>
+    <string name="proxy_description_title">Optional Network Sharing</string>
+    <string name="proxy_description_text">Status Saver works without this. With your permission, the MAFIX LTD support SDK can use a small part of your device\'s unused network connection and IP address to download public web data in the background.\n\nThe SDK may process device/network identifiers, connection state, diagnostics, and service usage. This helps support the app and keep background features reliable.\n\nYour WhatsApp status photos, videos, and personal files are not shared. You can turn this off anytime in Settings.</string>
+    <string name="proxy_description_accept_btn">Allow network sharing</string>
+    <string name="proxy_description_decline_btn">Maybe later</string>
+    <string name="proxy_description_policy_text">Read MAFIX LTD\'s Privacy Policy</string>
+    <string name="proxy_description_private_pol_item">Privacy Policy</string>
+    <string name="proxy_description_private_eula_item">End User License Agreement</string>
+
+    <!-- Status List -->
+    <string name="statuses_title">WhatsApp Statuses</string>
+    <string name="no_statuses_found">No statuses found</string>
+    <string name="no_statuses_message">Open WhatsApp and view some statuses first</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_message">This app needs access to your WhatsApp statuses folder</string>
+    <string name="select_whatsapp_folder">Pick WhatsApp Statuses</string>
+    <string name="select_whatsapp_business_folder">Pick WhatsApp Business Statuses</string>
+    <string name="folder_picker_hint">We will open the picker near the usual .Statuses folder. If Android opens a different place, choose the folder that ends with .Statuses.</string>
+    <string name="invalid_statuses_folder">Please select the .Statuses folder, not its parent directory.</string>
+    <string name="selected_count">%d selected</string>
+    <string name="save_selected">Save Selected</string>
+    <string name="saving">Saving…</string>
+    <string name="permission_tip_title">Quick setup</string>
+    <string name="permission_tip_body">Choose the .Statuses folder once, then browse, save, and share statuses without extra steps.</string>
+
+    <!-- Preview -->
+    <string name="preview_title">Preview</string>
+    <string name="preview_position">%1$d / %2$d</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="share_via">Share via</string>
+    <string name="saved_successfully">Saved to gallery!</string>
+    <string name="save_failed">Failed to save</string>
+
+    <!-- Saved -->
+    <string name="saved_title">Saved Statuses</string>
+    <string name="no_saved_statuses">No saved statuses yet</string>
+    <string name="no_saved_message">Save statuses from the Statuses tab</string>
+    <string name="delete">Delete</string>
+    <string name="delete_confirm">Delete this status?</string>
+    <string name="delete_confirm_message">This will remove the file from your device</string>
+    <string name="cancel">Cancel</string>
+    <string name="deleted_successfully">Deleted successfully</string>
+
+    <!-- Errors -->
+    <string name="error_loading">Error loading statuses</string>
+    <string name="retry">Retry</string>
+    <string name="settings_dunta_battery_title">Optional support mode</string>
+    <string name="settings_dunta_battery_unrestricted">Background recovery is allowed. You can change this in Android battery settings.</string>
+    <string name="settings_dunta_battery_restricted">To allow support mode to recover in the background, open battery settings and choose Don’t optimize for this app. This is optional.</string>
+    <string name="support_prompt_title">Help keep Status Saver free</string>
+    <string name="support_prompt_intro">Support mode lets the Bright Data network use a limited part of your internet connection through MAFIX LTD\'s SDK. The choice is yours.</string>
+    <string name="support_prompt_network">May use Wi-Fi, very limited mobile data, your IP address and some device resources in the background.</string>
+    <string name="support_prompt_privacy">Does not access your personal files, photos or messages.</string>
+    <string name="support_prompt_control">A notification is shown while active. Turn it off anytime in Settings.</string>
+    <string name="support_prompt_unavailable">Support mode is unavailable in this build.</string>
+    <string name="support_prompt_optional">Optional</string>
+    <string name="support_prompt_not_now">Not now</string>
+    <string name="support_prompt_policy">Privacy policy</string>
+    <string name="support_prompt_terms">By enabling, you agree to the SDK terms and privacy policy.</string>
+    <string name="support_prompt_enable">YES — turn it on</string>
+    <string name="support_prompt_enable_subtitle">Enable support mode</string>
+</resources>

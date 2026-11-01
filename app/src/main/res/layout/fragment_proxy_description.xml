@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:fillViewport="false"
+    android:minWidth="320dp"
+    android:overScrollMode="never">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="320dp"
+        android:paddingStart="24dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp">
+
+        <FrameLayout
+            android:id="@+id/proxyDialogIcon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/proxy_dialog_icon_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/proxy_dialog_status_icon" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/proxyDescriptionTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:textColor="#1D1B20"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proxyDialogIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/proxyDescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/proxy_dialog_info_bg"
+            android:lineSpacingExtra="3dp"
+            android:padding="18dp"
+            android:text="@string/proxy_description_text"
+            android:textColor="#514A55"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proxyDescriptionTitle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/proxyDescriptionAcceptBtn"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/proxy_dialog_primary_button"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:stateListAnimator="@null"
+            android:text="@string/proxy_description_accept_btn"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proxyDescriptionText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/proxyDescriptionDeclineBtn"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/proxy_dialog_secondary_button"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:stateListAnimator="@null"
+            android:text="@string/proxy_description_decline_btn"
+            android:textAllCaps="false"
+            android:textColor="#087E5B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proxyDescriptionAcceptBtn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/proxyDescriptionPolicy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="@string/proxy_description_policy_text"
+            android:textColor="#7B747F"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proxyDescriptionDeclineBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

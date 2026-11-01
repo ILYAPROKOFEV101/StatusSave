@@ -1,0 +1,31 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Local tools, generated distributions and signing material
+.idea/
+.kotlin/
+**/build/
+**/release/
+*.apk
+*.aab
+*.jks
+*.keystore
+*.hprof
+.env
+.env.*
+
+# Provider configuration stays local; use the checked-in example.
+/gradle.properties
