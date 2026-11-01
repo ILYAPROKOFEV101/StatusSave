@@ -1,8 +1,20 @@
 # StatusSave
 
-A Kotlin Android app for browsing status photos and videos already stored on a device, saving selected items to the gallery, and sharing or deleting saved copies. The storage implementation handles both legacy files and Android's Storage Access Framework, with optional background auto-save.
+**Android media utility · Kotlin · Jetpack Compose · Android 8.0+**
 
-[Google Play](https://play.google.com/store/apps/details?id=com.statusvideo.statussaver) · `com.statusvideo.statussaver` · Android 8.0+ · Jetpack Compose
+Browse locally available status photos and videos, preview them, and save selected media to the gallery. This project brings together Android storage compatibility, coordinated foreground/background saves, reactive persistence and an optional consent-controlled SDK integration.
+
+[Google Play](https://play.google.com/store/apps/details?id=com.statusvideo.statussaver) · [Engineering decisions](#engineering-decisions) · [Code map](#code-map) · [Build and run](#build-and-run)
+
+### Engineering highlights
+
+| Challenge | Implementation to review |
+| --- | --- |
+| **Storage across Android versions** | Persisted SAF folder grants and legacy file access feed one repository; MediaStore publishes exported copies. [Storage implementation](app/src/main/java/com/statusvideo/statussaver/data/repository/StatusRepositoryImpl.kt) |
+| **Overlapping save requests** | A coroutine `Mutex`, Room lookups and in-flight source IDs coordinate manual saves with auto-save; background copies run in batches of up to three. [Save coordination](app/src/main/java/com/statusvideo/statussaver/data/repository/StatusRepositoryImpl.kt#L140) |
+| **Background execution and opt-out** | Unique WorkManager jobs apply battery/storage constraints; SDK recovery has separate consent checks, constraints and cancellation. [Media scheduler](app/src/main/java/com/statusvideo/statussaver/data/worker/BackgroundStatusSaveScheduler.kt) · [SDK recovery](app/src/main/java/com/statusvideo/statussaver/core/dunta/SupportModeRecoveryWorker.kt) |
+
+The [engineering tour](#engineering-decisions) explains the constraints, tradeoffs and current boundaries behind these choices. Application ID: `com.statusvideo.statussaver`.
 
 ## In the app
 
